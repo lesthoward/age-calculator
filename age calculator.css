@@ -1,0 +1,129 @@
+html {
+    font-size: 62.5%;
+}
+*, ::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #D64550;
+    font-family: 'Lato', arial;
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+.container {
+    background: #E8F1F2;
+    min-width: 250px;
+    max-width: 90%;
+    padding: 4rem 6rem;
+    border-radius: .5rem;
+    box-shadow: 0 1.5rem 2.8rem rgba(0, 0, 0, .2);
+}
+
+.container__title {
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 3rem;
+    letter-spacing: .2rem;
+}
+
+
+.age__head {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+    border-radius: .5rem;
+    padding: 3rem;
+}
+
+.age__date,
+.age__calculate {
+    background: #fff;
+    color: #080808;
+    height: 5rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-weight: 300;
+}
+
+.age__date {
+    width: 55%;
+}
+
+.age__calculate {
+    /* background: lighten(#D64550, 90); */
+    /* background: #DF928E; */
+    cursor: pointer;
+    width: 40%;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, .2);
+} 
+
+
+.age__calculate:hover {
+    filter: brightness(.9);
+}
+
+.age__calculate:active {
+    transform: scaleX(1.04);
+}
+
+.age__body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.age__content {
+    background: #080808;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    width: 30%;
+    height: 9rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width:525px) {
+    .container {
+        padding: 2rem 3rem;
+    }
+    .age__date {
+        margin-bottom: 1rem;
+    } 
+
+    .age__date,
+    .age__calculate {
+        width: 100%;
+    }
+
+    .age__content {
+        width: 45%;
+    }
+}
+
+.age__output {
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+.age__text {
+    font-weight: 300;
+}
+
+
+
